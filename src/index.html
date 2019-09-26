@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Francisco's Portfolio</title>
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="dist/css/style.css">
-    <script src="src/app.js" charset="utf-8"></script>
-    <script src="../../assets/vendor/slick-carousel/slick/slick.js"></script>
+    <link rel="stylesheet" href="style.scss">
+    <script src="app.js" charset="utf-8"></script>
   </head>
   <body>
 
@@ -258,66 +257,38 @@
       <div class="hero-body">
         <div class="container has-text-centered">
           <h3 class="title is-3">My Recent Work</h3>
+          <div id="slick-images" class="slick-initialized slick-slider">
+            <button class="slick-prev slick-arrow" arial-label="Previous" type="button"></button>
+            <div class="slick-list draggable">
+              <div class="slick-track">
+                <div class="slick-slide slick-clone" data-slick-index="-1" aria-hidden="true" tabindex"-1" style="width:960px;">
+                  <a href="https://mathsobsession.herokuapp.com">
+                    <img src="https://i.imgur.com/7Ip5lMt.png" alt="Mathobsession Website">
+                  </a>
+                  <br/>
+                  <p></p>
+                </div>
+              </div>
+            </div>
 
-          <div class="js-slick-carousel u-slick"
-             data-fade="true"
-             data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-centered--y rounded-circle"
-             data-arrow-left-classes="fas fa-arrow-left u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-lg-2 ml-xl-4"
-             data-arrow-right-classes="fas fa-arrow-right u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-lg-2 mr-xl-4">
-          <div class="js-slide bg-img-hero-center" style="background-image: url(../assets/img/img24.jpg);">
-            <div class="space-5">
-            </div>
           </div>
-          <div class="js-slide bg-img-hero-center" style="background-image: url(../assets/img/img25.jpg);">
-            <div class="space-5">
-            </div>
-          </div>
-          <div class="js-slide bg-img-hero-center" style="background-image: url(../assets/img/img26.jpg);">
-            <div class="space-5">
-            </div>
-          </div>
-        </div>
 
+          <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+          <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+          <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+          <script type="text/javascript" src="slick/slick.min.js"></script>
 
+          <script type="text/javascript">
+            $(document).ready(function(){
+              $('.projects-slick').slick({
+                setting-name: setting-value
+              });
+            });
+          </script>
 
-          <div id="slick-images">
-            <div>
-              <a href="https://mathsobsession.herokuapp.com">
-                <img src="https://i.imgur.com/7Ip5lMt.png" alt="Mathobsession Website">
-              </a>
-              <br/>
-              <p></p>
-            </div>
-            <div>
-              <a href="https://datingexp.herokuapp.com/#/">
-                <img src="https://i.imgur.com/5muBDBm.png" alt="Mathobsession Website">
-              </a>
-              <br/>
-              <p></p>
-            </div>
-            <div>
-              <a href="https://franciscofhdias.github.io/Project-2/#/">
-                <img src="https://i.imgur.com/dSQo308.png" alt="Mathobsession Website">
-              </a>
-              <br/>
-              <p></p>
-            </div>
-            <div>
-              <a href="https://franciscofhdias.github.io/ProjectOne/">
-                <img src="https://i.imgur.com/Ky9SpKY.png" alt="Mathobsession Website">
-              </a>
-              <br/>
-              <p></p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-    <script>
-      $(document).on('ready', function () {
-        $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
-      });
-    </script>
+
   </body>
 </html>
