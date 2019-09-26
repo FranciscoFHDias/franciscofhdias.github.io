@@ -1,0 +1,22 @@
+@charset "utf-8";
+@import "../node_modules/bulma/bulma.sass";
+
+h1 {
+  color: blue;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.profilePic {
+  border-radius: 4px;
+
+}
+
+i {
+  font-size: 50px;
+  padding: 10px;
+  color: #fafafa;
+  
+}
