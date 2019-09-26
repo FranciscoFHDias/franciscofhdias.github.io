@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Francisco's Portfolio</title>
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="src/app.js" charset="utf-8"></script>
+    <script src="../../assets/vendor/slick-carousel/slick/slick.js"></script>
   </head>
   <body>
 
-    <section class="hero is-success is-fullheight">
+    <section class="hero is-success is-fullheight ">
       <div class="hero-head">
         <nav class="navbar" role="navegation" aria-label="main navigation">
             <div class="navbar-menu">
@@ -39,7 +40,7 @@
           </div>
           <div>
           <h1 class="title">
-            Francisco Dias <br/>[ Full Stack Web Developer ]
+            Francisco Dias [ Full Stack Web Developer ]
           </h1>
           <h2 class="subtitle">
             Rock Climber | Cyclist | Dog Owner | World Traveller
@@ -216,14 +217,14 @@
               </div>
               <div class="timeline-content">
                 <p class="heading">June 2019 - September 2019:</p>
-                <p>Software Engineer Immersive at General Assembly, London</p>
+                <p>Software Engineer Immersive at <a href="https://generalassemb.ly">General Assembly</a>, London</p>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-marker"></div>
               <div class="timeline-content">
                 <p class="heading">December 2016 – June 2019</p>
-                <p>Head of Learning and Development at Honest Burgers Restaurants, London</p>
+                <p>Head of Learning and Development at <a href="https://www.honestburgers.co.uk/">Honest Burgers Restaurants</a>, London</p>
               </div>
             </div>
             <div class="timeline-item">
@@ -237,7 +238,7 @@
               <div class="timeline-marker"></div>
               <div class="timeline-content">
                 <p class="heading">January 2015 – June 2015</p>
-                <p>Area Training Manager at itsu limited, London</p>
+                <p>Area Training Manager at <a href="https://www.itsu.com/">itsu limited</a>, London</p>
               </div>
             </div>
             <div class="timeline-item">
@@ -256,9 +257,67 @@
     <section id="projects" class="hero is-warning is-fullheight">
       <div class="hero-body">
         <div class="container has-text-centered">
+          <h3 class="title is-3">My Recent Work</h3>
 
+          <div class="js-slick-carousel u-slick"
+             data-fade="true"
+             data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-centered--y rounded-circle"
+             data-arrow-left-classes="fas fa-arrow-left u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-lg-2 ml-xl-4"
+             data-arrow-right-classes="fas fa-arrow-right u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-lg-2 mr-xl-4">
+          <div class="js-slide bg-img-hero-center" style="background-image: url(../assets/img/img24.jpg);">
+            <div class="space-5">
+            </div>
+          </div>
+          <div class="js-slide bg-img-hero-center" style="background-image: url(../assets/img/img25.jpg);">
+            <div class="space-5">
+            </div>
+          </div>
+          <div class="js-slide bg-img-hero-center" style="background-image: url(../assets/img/img26.jpg);">
+            <div class="space-5">
+            </div>
+          </div>
+        </div>
+
+
+
+          <div id="slick-images">
+            <div>
+              <a href="https://mathsobsession.herokuapp.com">
+                <img src="https://i.imgur.com/7Ip5lMt.png" alt="Mathobsession Website">
+              </a>
+              <br/>
+              <p></p>
+            </div>
+            <div>
+              <a href="https://datingexp.herokuapp.com/#/">
+                <img src="https://i.imgur.com/5muBDBm.png" alt="Mathobsession Website">
+              </a>
+              <br/>
+              <p></p>
+            </div>
+            <div>
+              <a href="https://franciscofhdias.github.io/Project-2/#/">
+                <img src="https://i.imgur.com/dSQo308.png" alt="Mathobsession Website">
+              </a>
+              <br/>
+              <p></p>
+            </div>
+            <div>
+              <a href="https://franciscofhdias.github.io/ProjectOne/">
+                <img src="https://i.imgur.com/Ky9SpKY.png" alt="Mathobsession Website">
+              </a>
+              <br/>
+              <p></p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(document).on('ready', function () {
+        $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+      });
+    </script>
   <script type="text/javascript" src="bundle.js"></script></body>
 </html>
