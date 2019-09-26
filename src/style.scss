@@ -1,5 +1,6 @@
 @charset "utf-8";
-@import "../node_modules/bulma/bulma.sass";
+@import 'bulma';
+@import '~bulma-extensions';
 
 h1 {
   color: blue;
@@ -9,14 +10,31 @@ h1 {
     box-sizing: inherit;
 }
 
-.profilePic {
-  border-radius: 4px;
-
+#profilePic {
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  margin-bottom: 60px;
 }
 
 i {
   font-size: 50px;
   padding: 10px;
   color: #fafafa;
-  
+}
+
+.skills-icon-wraper {
+  padding: 8px;
+  width: 20%;
+}
+
+.icons {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  color: inherit;
 }
