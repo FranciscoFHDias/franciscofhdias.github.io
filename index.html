@@ -15,19 +15,27 @@
     <section class="hero is-success is-fullheight ">
       <div class="hero-head">
         <nav class="navbar" role="navegation" aria-label="main navigation">
-            <div class="navbar-menu">
-              <div class="navbar-end">
-                <a class="navbar-item" href="#about">
-                  Get to know me
-                </a>
-                <a class="navbar-item" href="#experience">
-                  My Experience
-                </a>
-                <a class="navbar-item" href="#projects">
-                  My Recent Work
-                </a>
-              </div>
+          <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+          <div class="navbar-menu" id="navMenu">
+            <div class="navbar-end">
+              <a class="navbar-item" href="#about">
+                Get to know me
+              </a>
+              <a class="navbar-item" href="#experience">
+                My Experience
+              </a>
+              <a class="navbar-item" href="#projects">
+                My Recent Work
+              </a>
+              <a class="navbar-item" href="#contact">
+                Contact
+              </a>
             </div>
+          </div>
         </nav>
       </div>
 
@@ -559,7 +567,7 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer id="contact" class="footer">
       <div class="container">
         <div class="columns">
           <div class="column">
@@ -592,5 +600,21 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', () => {
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        if ($navbarBurgers.length > 0) {
+          $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+
+            });
+          });
+        }
+      });
+    </script>
   <script type="text/javascript" src="bundle.js"></script></body>
 </html>
