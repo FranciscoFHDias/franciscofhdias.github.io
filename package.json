@@ -4,7 +4,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "yarn build && gh-pages -d dist",
+    "deploy": "yarn build && gh-pages -d fd",
     "serve": "webpack-dev-server --mode=development",
     "build": "webpack -p"
   },
