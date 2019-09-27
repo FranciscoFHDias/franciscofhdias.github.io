@@ -18,7 +18,7 @@ h1 {
 }
 
 i {
-  font-size: 50px;
+  font-size: 40px;
   padding: 10px;
   color: #fafafa;
 }
@@ -40,6 +40,21 @@ a {
 }
 
 .project-slide {
-  max-width: 600px;
-  max-height: 600px;
+  margin: 0 20px;
+}
+
+.project-slide img {
+  width: auto;
+  margin: 0 auto;
+}
+
+.icon-project {
+  margin-top: 30px;
+}
+
+.icons-project {
+  margin: 20px auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
