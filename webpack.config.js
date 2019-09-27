@@ -3,9 +3,10 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
+  mode: 'production',
   entry: './src/app.js',
   output: {
-    path: path.resolve(__dirname, 'fd'),
+    path: path.resolve('fd'),
     filename: 'bundle.js'
   },
   devtool: 'source-maps',
