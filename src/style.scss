@@ -17,19 +17,28 @@ h1 {
   margin-bottom: 40px;
 }
 
-i {
-  font-size: 40px;
-  padding: 10px;
-  color: #fafafa;
-}
-
 .skills-icon-wraper {
   padding: 8px;
   width: 20%;
 }
 
+.icon {
+  font-size: 40px;
+}
+
 .icons {
   margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon-project {
+  margin-top: 30px;
+}
+
+.icons-project {
+  margin: 20px auto;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -46,15 +55,4 @@ a {
 .project-slide img {
   width: auto;
   margin: 0 auto;
-}
-
-.icon-project {
-  margin-top: 30px;
-}
-
-.icons-project {
-  margin: 20px auto;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
 }

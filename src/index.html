@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <script src="app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="styles.scss">
   </head>
   <body>
 
@@ -45,16 +45,24 @@
           </h2>
           <div class="container has-text-centered">
             <a href="https://www.linkedin.com/in/franciscofhdias/">
-              <i class="fab fa-linkedin-in"></i>
+              <span class="icon is-large">
+                <i class="fab fa-linkedin-in"></i>
+              </span>
             </a>
             <a href="https://stackoverflow.com/users/11323679/franciscofhdias">
-              <i class="fab fa-stack-overflow"></i>
+              <span class="icon is-large">
+                <i class="fab fa-stack-overflow"></i>
+              </span>
             </a>
             <a href="https://github.com/FranciscoFHDias">
-              <i class="fab fa-github"></i>
+              <span class="icon is-large">
+                <i class="fab fa-github"></i>
+              </span>
             </a>
             <a href="mailto: francisco.ffbhd@gmail.com">
-              <i class="far fa-envelope"></i>
+              <span class="icon is-large">
+                <i class="far fa-envelope"></i>
+              </span>
             </a>
           </div>
         </div>
@@ -66,7 +74,7 @@
           <div class="columns">
             <div class="column">
               <div class="container has-text-centered">
-                <h3 class="title">About</h3>
+                <h3 class="title is-3">About</h3>
                 <p>
                   I’ve spent over ten years in hospitality doing a range of operational and people-focused roles within Learning and Development. I was attracted to the fast pace of the industry and the joy of solving problems through the synergy between different people from different backgrounds.
                   <br/>
@@ -81,7 +89,7 @@
             <div class="is-divider-vertical"></div>
             <div class="column">
               <div class="container has-text-centered">
-                <h3 class="title">Skills</h3>
+                <h3 class="title is-3">Skills</h3>
                 <div class="icons">
                   <div class="skills-icon-wraper">
                     <span class="icon is-large">
@@ -527,10 +535,41 @@
             slidesToScroll: 2,
           });
         </script>
-
         </div>
       </div>
     </section>
-
+    <footer class="footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div class="container">
+              <h3 class="title is-3">Contact</h3>
+              <a href="mailto: francisco.ffbhd@gmail.com"><h4><i class="fas fa-envelope"></i>                 francisco.ffbhd@gmail.com<h4>
+              </a>
+              <br/>
+              <a href="https://github.com/FranciscoFHDias"><h4><i class="fab fa-github"></i></i>                 github.com/FranciscoFHDias<h4>
+              </a>
+              <br/>
+              <a href="https://www.linkedin.com/in/franciscofhdias/"><h4><i class="fab fa-linkedin"></i>                 www.linkedin.com/in/franciscofhdias<h4>
+              </a>
+              <br/>
+              <a href="https://stackoverflow.com/users/11323679/franciscofhdias"><h4><i class="fab fa-stack-overflow"></i>                 stackoverflow.com/users/11323679/franciscofhdias<h4>
+              </a>
+            </div>
+          </div>
+          <div class="is-divider-vertical"></div>
+          <div class="column">
+            <div class="container">
+              <h3 class="title is-3">Education</h3>
+              <h6>Software Engineer Immersive at <a href="https://generalassemb.ly">General Assembly</a> (June-September 2019)</h6>
+              <br/>
+              <h6>Advanced English Grammar for Academic Purposes at <a href="http://www.bbk.ac.uk/">Birkbeck University of London</a> (January-May 2013)</h6>
+              <br/>
+              <h6>Certificated in Training Practices by <a href="https://www.cipd.co.uk/learn/training">CIPD</a> (January-August 2009)</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
