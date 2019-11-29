@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Francisco's Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
@@ -168,9 +170,9 @@
                   </div>
                   <div class="skills-icon-wraper">
                     <span class="icon is-large">
-                      <img class="sqlite" src="https://i.imgur.com/o9aZQS4.png" alt="">
+                      <i class="devicon-postgresql-plain"></i>
                     </span>
-                    <p>SQLite</p>
+                    <p>PostgreSQL</p>
                   </div>
                   <div class="skills-icon-wraper">
                     <span class="icon is-large">
@@ -367,7 +369,7 @@
                 </div>
                 <div class="icon-wraper-project">
                   <span class="icon is-large">
-                    <img class="sqlite-project" src="https://i.imgur.com/hf85aa2.png" alt="">
+                    <i class="devicon-postgresql-plain"></i>
                   </span>
                 </div>
               </div>
@@ -576,44 +578,6 @@
             </div>
           </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script type="text/javascript">
-          $("#slick-images").slick({
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            responsive: [
-                            {
-                              breakpoint: 1200,
-                              settings: {
-                                slidesToShow: 2,
-                                slidesToScroll: 1
-                              }
-                            },
-                            {
-                              breakpoint: 1008,
-                              settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1
-                              }
-                            },
-                            {
-                              breakpoint: 800,
-                              settings: "unslick"
-                            }
-
-                          ]
-          });
-          $(window).resize(function () {
-              $('.js-slider').not('.slick-initialized').slick('resize');
-          });
-
-          $(window).on('orientationchange', function () {
-              $('.js-slider').not('.slick-initialized').slick('resize');
-          });
-        </script>
-        </div>
       </div>
     </section>
     <footer id="contact" class="footer">
@@ -650,18 +614,38 @@
       </div>
     </footer>
     <script type="text/javascript">
-      document.addEventListener('DOMContentLoaded', () => {
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-        if ($navbarBurgers.length > 0) {
-          $navbarBurgers.forEach( el => {
-            el.addEventListener('click', () => {
-              const target = el.dataset.target;
-              const $target = document.getElementById(target);
-              el.classList.toggle('is-active');
-              $target.classList.toggle('is-active');
-            });
-          });
-        }
+      $("#slick-images").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+                        {
+                          breakpoint: 1200,
+                          settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                          }
+                        },
+                        {
+                          breakpoint: 1008,
+                          settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                          }
+                        },
+                        {
+                          breakpoint: 800,
+                          settings: "unslick"
+                        }
+
+                      ]
+      });
+      $(window).resize(function () {
+          $('.js-slider').not('.slick-initialized').slick('resize');
+      });
+
+      $(window).on('orientationchange', function () {
+          $('.js-slider').not('.slick-initialized').slick('resize');
       });
     </script>
   <script type="text/javascript" src="bundle.js"></script></body>

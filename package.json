@@ -12,7 +12,7 @@
   "author": "Francisco Dias <francisco.ffbhd@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.6.2",
+    "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.2",
     "@fortawesome/fontawesome-free": "^5.11.2",
     "babel-cli": "^6.26.0",
